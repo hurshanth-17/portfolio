@@ -4,10 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hurshanth | System Architect</title>
-
-<!-- Monospace Font -->
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
-
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -19,7 +16,6 @@ color:#39ff14;
 overflow-x:hidden;
 }
 
-/* subtle scanline effect */
 body::after{
 content:"";
 position:fixed;
@@ -37,7 +33,6 @@ transparent 3px
 pointer-events:none;
 }
 
-/* Navbar */
 nav{
 position:fixed;
 top:0;
@@ -74,7 +69,6 @@ padding:2px 6px;
 border-radius: 10px;
 }
 
-/* Hero */
 .hero{
 height:100vh;
 display:flex;
@@ -95,7 +89,6 @@ color:#7cff7c;
 max-width:600px;
 }
 
-/* Terminal style button */
 .btn{
 margin-top:20px;
 padding:10px 20px;
@@ -112,7 +105,6 @@ color:#000;
 border-radius: 10px;
 }
 
-/* Sections */
 section{
 padding:70px 8%;
 border-top:1px solid #003300;
@@ -120,7 +112,7 @@ border-radius: 10px;
 }
 
 .section-title{
-margin-bottom:15px;
+margin-bottom: 20px;
 font-size:20px;
 color:#7cff7c;
 }
@@ -131,14 +123,21 @@ padding:15px;
 margin:10px 0;
 background:#050505;
 transition:0.3s;
-border-radius: 10px;
+border-radius: 20px;
+}
+
+.prompt {
+  color: #39ff14;
+  padding:70px 8%;
+  font-size: 23px;
+  font-family: monospace;
+  font-weight: bold;
 }
 
 .card:hover{
 box-shadow:0 0 10px #39ff14;
 }
 
-/* Footer */
 footer{
 padding:15px 8%;
 border-top:1px solid #003300;
@@ -154,7 +153,7 @@ color:#66ff66;
 <body>
 
 <nav>
-<h3>portal@hurshanth</h3>
+<h3>portfolio@hurshanth</h3>
 <ul>
 <li><a href="#about">about</a></li>
 <li><a href="#skills">skills</a></li>
@@ -166,7 +165,7 @@ color:#66ff66;
 <div class="hero">
 <h1>> Initializing Hurshanth...</h1>
 <p>Developer focused on designs and colours, system, precision and digital architecture.</p>
-<button style="border-radius: 8px;font-family:'JetBrains Mono',monospace;"class="btn" onclick="document.getElementById('projects').scrollIntoView()">
+<button style="border-radius: 20px;font-family:'JetBrains Mono',monospace;font-weight: bold;"class="btn" onclick="document.getElementById('projects').scrollIntoView()">
 $ view_projects
 </button>
 </div>
@@ -174,12 +173,12 @@ $ view_projects
 <section id="about">
 <h2 class="section-title"># about_me</h2>
 <div class="card">
-Crafting my creativity.<br>
-I’m Hurshanth  a design focused developer passionate about UI/UX and gaming-inspired interfaces.  
-I enjoy creating visually sharp, immersive digital experiences that feel powerful and intuitive.  
-
-My focus is on building structured layouts, clean interaction systems, and futuristic design concepts.  
-I continuously improve my skills in web development, interface architecture, and creative problem-solving.
+Crafting my creativity.<br><br>
+<ul style="margin-left: 20px;">
+<li>I'm Hurshanth  a design focused developer passionate about UI/UX and gaming inspired interfaces.</li>
+<li>I enjoy creating visually sharp, immersive digital experiences that feel powerful and intuitive.</li>
+<li>My focus is on building structured layouts, clean interaction systems, and futuristic design concepts.</li>
+<li>I continuously improve my skills in web development, interface architecture, and creative problem solving.</li>
 </div>
 </section>
 
@@ -187,8 +186,8 @@ I continuously improve my skills in web development, interface architecture, and
 <h2 class="section-title"># skills</h2>
 <div class="card">HTML / CSS</div>
 <div class="card">UI/UX </div>
-<div class="card">Gaming</div>
 <div class="card">Canva</div>
+<div class="card">Figma</div>
 </section>
 
 <section id="projects">
@@ -204,19 +203,19 @@ I continuously improve my skills in web development, interface architecture, and
 <section id="contact">
 <h2 class="section-title"># contact</h2>
 <div class="card">
-Email: harihurshanth3@gmail.com
+Email: <a href="mailto:harihurshanth3@gmail.com" style="color: #39ff14;">harihurshanth3@gmail.com</a>
 </div>
 <div class="card">
-Mobile Number: 91+8098065562
+Linkedin: <a href="https://www.linkedin.com/in/hurshanth-s-r-2b4956381" style="color: #39ff14;" target="_blank">https://www.linkedin.com/in/hurshanth-s-r-2b4956381</a>
+</div>
 </div>
 <div class="card">
-Linkedin:https://www.linkedin.com/in/hurshanth-s-r-2b4956381
+Github: <a href="https://github.com/hurshanth-17" style="color: #39ff14;" target="_blank">https://github.com/hurshanth-17</a>
 </div>
 </section>
-
-<footer>
-system.status = "online"; | © 2026 Hurshanth
-</footer>
-
+<center>
+    <p class="prompt">$ <span id="typing"></span><span class="cursor">█</span></p>
+</center>
+<script src="script.js"></script>
 </body>
 </html>
